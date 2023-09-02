@@ -256,3 +256,40 @@ body {
 .nextprev-btn.back {
   left: 1.5rem;
 }
+
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+
+.services-box .services-content {
+  flex: 1 1 10rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  padding: 0.8rem 0.5rem 1.1rem;
+  text-align: center;
+  transition: 0.32s ease;
+}
+
+.services-box .services-content:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.services-content i {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.services-content h3 {
+  font-size: 1.1rem;
+}
+
+.services-content p {
+  margin: 0.2rem 0 0, 8rem;
+}
+
+.services-content .btn {
+  width: 8rem;
+  height: 2.5rem;
+}
