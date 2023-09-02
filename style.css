@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --bg-color: #081b29;
+    --main-color: #00abf0;
+    --text-color: #333;
+    --second-text-color: #555;
+    --white-color: #fff;
+    --cover-color: linear-gradient(45deg, #00abf0, #006e9a); 
+    --pages-color: linear-gradient(90deg, #fff, #ddd);
+    --border: .128rem solid #00abf0;            /* --border: .125rem solid #00abf0; */
+    --box-shadow: 0 0 .8rem rgba(0,0,0,.2);     /* --box-shadow: 0 0 .6rem rgba(0,0,0,.2); */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.wrapper{
+    position: relative;
+    width: 66rem;
+    height: 45rem;
+}
+
+.cover{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--cover-color);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+    transform-origin: right;
+}
+
+.cover.cover-left{
+    z-index: -1;   /*important property for folding pages*/
+}
+
+.cover.cover-right.turn{
+    transform: rotateY(180deg);
+}
